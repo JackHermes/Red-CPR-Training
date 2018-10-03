@@ -1,0 +1,45 @@
+body {
+  /* display: flex; */
+  height: 100%;
+  /* justify-content:flex-start; */
+  margin-left: 125px;
+}
+
+.header {
+  background-color: transparent;
+  color: black;
+  display: flex;
+  font-family: "Open Sans",sans-serif;
+  font-size: 17px;
+  justify-content: space-between;
+  height: 50px;
+  padding: 20px;
+}
+
+.header-logo {
+  justify-content: flex-start;
+}
+
+.navigation {
+  padding-right: 350px;
+}
+
+.video-js {
+
+}
+
+.video-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  background-image: url(https://www.redsafety.com/wp-content/uploads/2015/10/homepage-bbb.001.jpeg);
+  background-repeat:no-repeat;
+  background-size: 70%;
+  height: 888px;
+  white-space: pre;
+}
