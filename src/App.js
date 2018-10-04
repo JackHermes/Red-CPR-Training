@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
-import Header from './Header.js';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+ import Home from './Home.js';
+import CPRCourse from './CPRCourse.jsx'
 import VideoPage from './VideoPage.js';
 
 import './App.css';
@@ -8,12 +9,21 @@ import './App.css';
 class App extends Component {
   render() {
     return (
+      <Router>
       <div>
-        <div className="wrapper">
-          <Header />
-          {/*insert quicklink to mock course*/}
+        <div className="header">
+          <div clasName="header-logo">
+            <img src="https://www.redsafety.com/wp-content/uploads/2017/02/logo.png" />
+          </div>
+        <div className="navigation">
+            <Link to="/">Home</Link>   Security   Fire   <Link to="/cpr">CPR</Link>   About   Careers
+          </div>
         </div>
+
+        <Route exact path="/" component={Home} />
+        <Route path="/cpr" component={CPRCourse} />
       </div>
+    </Router>
     );
   }
 }

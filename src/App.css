@@ -5,6 +5,25 @@ body {
   margin-left: 125px;
 }
 
+p {
+  margin: 5% auto;
+  width: 40%;
+}
+
+#cprCourse {
+  text-align: center;
+}
+
+#video-btn {
+  background-color: firebrick;
+  /* border-color: blue; */
+  border: medium solid maroon;
+  /* border-radius: ; */
+  color: white;
+  display: inline;
+  width: 40%;
+}
+
 .header {
   background-color: transparent;
   color: black;
